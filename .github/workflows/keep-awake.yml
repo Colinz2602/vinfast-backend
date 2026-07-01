@@ -1,0 +1,17 @@
+name: Keep Render Awake (6AM - 12PM ICT)
+
+on:
+  schedule:
+    # Chạy mỗi 14 phút, từ 23:00 UTC (6h sáng VN) đến 17:00 UTC (24h đêm VN)
+    - cron: '*/14 * * * *'
+  
+  # Dòng này cho phép có thể bấm chạy tay (manual) để test nếu muốn
+  workflow_dispatch: 
+
+jobs:
+  ping-server:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Render Service
+        # THAY THẾ URL DƯỚI ĐÂY BẰNG LINK RENDER THỰC TẾ CỦA BẠN
+        run: curl -s https://vinfast-backend-57wa.onrender.com > /dev/null
