@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_car_promotions",
+  "info": {
+    "displayName": "promotion"
+  },
+  "options": {},
+  "attributes": {
+    "promotion_description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

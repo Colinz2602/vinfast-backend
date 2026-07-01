@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "car_types",
+  "info": {
+    "singularName": "car-type",
+    "pluralName": "car-types",
+    "displayName": "car_type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "order": {
+      "type": "biginteger"
+    },
+    "cars": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::car.car",
+      "mappedBy": "car_type"
+    }
+  }
+}

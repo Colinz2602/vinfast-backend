@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_car_general_specifications",
+  "info": {
+    "displayName": "general_specifications"
+  },
+  "options": {},
+  "attributes": {
+    "distance_charge": {
+      "type": "string"
+    },
+    "charging_time": {
+      "type": "string"
+    },
+    "capacity": {
+      "type": "string"
+    },
+    "number_of_seats": {
+      "type": "string"
+    },
+    "battery": {
+      "type": "string"
+    },
+    "acceleration_time": {
+      "type": "string"
+    },
+    "powerful_operation": {
+      "type": "string"
+    },
+    "guarantee": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

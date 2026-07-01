@@ -1,0 +1,115 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cars",
+  "info": {
+    "singularName": "car",
+    "pluralName": "cars",
+    "displayName": "car"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "gallery": {
+      "type": "component",
+      "component": "car.images",
+      "repeatable": false
+    },
+    "starting_price": {
+      "type": "biginteger"
+    },
+    "discount_price": {
+      "type": "biginteger"
+    },
+    "version": {
+      "type": "json"
+    },
+    "promotion": {
+      "type": "component",
+      "component": "car.promotion",
+      "repeatable": false
+    },
+    "main_image": {
+      "type": "component",
+      "component": "car.images",
+      "repeatable": false
+    },
+    "description": {
+      "type": "component",
+      "component": "car.description",
+      "repeatable": true
+    },
+    "general_specifications": {
+      "type": "component",
+      "component": "car.general-specifications",
+      "repeatable": false
+    },
+    "exterior": {
+      "type": "component",
+      "component": "car.description",
+      "repeatable": true
+    },
+    "interior": {
+      "type": "component",
+      "component": "car.description",
+      "repeatable": true
+    },
+    "charging_station": {
+      "type": "component",
+      "component": "car.description",
+      "repeatable": true
+    },
+    "technology_operations": {
+      "type": "component",
+      "component": "car.description",
+      "repeatable": true
+    },
+    "safe": {
+      "type": "component",
+      "component": "car.description",
+      "repeatable": true
+    },
+    "specifications": {
+      "type": "component",
+      "component": "car.description",
+      "repeatable": true
+    },
+    "photo_gallery": {
+      "type": "component",
+      "component": "car.images",
+      "repeatable": true
+    },
+    "is_featured": {
+      "type": "boolean"
+    },
+    "privilege": {
+      "type": "component",
+      "component": "car.description",
+      "repeatable": true
+    },
+    "car_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::car-type.car-type",
+      "inversedBy": "cars"
+    }
+  }
+}

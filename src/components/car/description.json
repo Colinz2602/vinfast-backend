@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_car_descriptions",
+  "info": {
+    "displayName": "content_block"
+  },
+  "options": {},
+  "attributes": {
+    "content_text": {
+      "type": "text"
+    },
+    "content_images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "layout_style": {
+      "type": "enumeration",
+      "enum": [
+        "media_text_section1",
+        "media_text_section2",
+        "media_text_section3"
+      ]
+    }
+  },
+  "config": {}
+}
