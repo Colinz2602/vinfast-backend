@@ -3,7 +3,7 @@ name: Keep Render Awake (6AM - 12PM ICT)
 on:
   schedule:
     # Chạy mỗi 14 phút, từ 23:00 UTC (6h sáng VN) đến 17:00 UTC (24h đêm VN)
-    - cron: '*/14 * * * *'
+    - cron: '*/10 * * * *'
   
   # Dòng này cho phép có thể bấm chạy tay (manual) để test nếu muốn
   workflow_dispatch: 
